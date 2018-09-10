@@ -84,40 +84,51 @@
 }
 .general-blocks {
 	display: flex;
+	justify-content: space-between;
 	width: 100vw;
 	height: 90vh;
 }
 
 .general-blocks a {
 	display: flex;
+	flex:1;
 	justify-content: center;
 	align-items: center;
 	font-size: 65px;
 	color: #920000;
 	font-weight: bold;
-	width: 33.33%;
+	width: calc(100% / 3);
 	text-shadow: 0 0 15px #ffffff;
+	position: relative;
+	overflow: hidden; 
 }
 
-.general-blocks a:hover {
-	transform: scale(1.05, 1.05);
-	transition: all 0.5s ease-in-out;
-	box-shadow: 0 0 30px #fffffff5
+.general-blocks a:before {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s linear;
 }
-
-.general-blocks .news {
+.general-blocks a.news:before {
 	background: url(../img/news-bg.jpg) 50% no-repeat;
-	background-size: auto;
+	background-size: cover;
 }
 
-.general-blocks .promo {
+.general-blocks a.promo:before {
 	background: url(../img/shares-bg.jpg) 50% no-repeat;
-	background-size: auto;
+	background-size: cover;
+}
+.general-blocks a.reports:before {
+	background: url(../img/reports-bg.jpg) 50% no-repeat;
+	background-size: cover;
 }
 
-.general-blocks .reports {
-	background: url(../img/reports-bg.jpg) 50% no-repeat;
-	background-size: auto;
+.general-blocks a:hover:before {
+	transform: scale(1.05);
 }
 
 .popup-choose-report {
