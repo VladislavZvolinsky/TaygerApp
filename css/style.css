@@ -70,17 +70,18 @@
 .header > div > h2 {
 	display: block;
 	width: 65%;
-	font-size: 15px;
-	color: #920000;
+	font-size: 20px;
+	color: #dbde2e;
 }
 
 .header > div > p {
 	display: block;
 	width: 35%;
-	color: #920000;
-	font-size: 15px;
+	color: #a92121;
+	font-size: 30px;
 	font-weight: bold;
-	text-shadow: 0 0 2px #ffffff;
+	text-align: center;
+	text-shadow: 0 0 1px #ffffff;
 }
 .general-blocks {
 	display: flex;
@@ -97,7 +98,6 @@
 	font-size: 65px;
 	color: #920000;
 	font-weight: bold;
-	width: calc(100% / 3);
 	text-shadow: 0 0 15px #ffffff;
 	position: relative;
 	overflow: hidden; 
@@ -105,13 +105,14 @@
 
 .general-blocks a:before {
 	position: absolute;
-	display: block;
 	content: "";
-	top: 0;
-	left: 0;
-	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 101%;
 	height: 100%;
-	transition: all 0.5s linear;
+	transition: all .4s linear;
+	z-index: -1;
 }
 .general-blocks a.news:before {
 	background: url(../img/news-bg.jpg) 50% no-repeat;
@@ -128,19 +129,23 @@
 }
 
 .general-blocks a:hover:before {
-	transform: scale(1.05);
+	transform: scale(1.03) translate(-50%,-50%);
+	filter: brightness(.6);
 }
 
 .popup-choose-report {
 	position: fixed;
+	display: flex;
+	flex-direction: column;
 	z-index: 10;
 	height: 40vh;
 	width: 70vw;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	background: #f0f0f0;
-	box-shadow: 0 0 10px #cccccc;
+	background: #df182be6;
+	box-shadow: 0 0 30px #fffffff5;
+	border-radius: 3%;
 	opacity: 0;
 	visibility: hidden;
 	transition: all .2s ease-in-out;
@@ -165,4 +170,14 @@
 .popupBg.active {
 	opacity: 1;
 	visibility: visible;
+}
+
+.popup-choose-report a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	font-weight: bold;
+	font-size: 35px;
+	color: #ffffff;
 }
