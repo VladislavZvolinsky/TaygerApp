@@ -2,22 +2,22 @@
 	background: url(../img/login-bg.png) 50% no-repeat #000000;
 	background-size: 40%;
 	height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .form-block {
 	background: #df182bdb;
 	padding: 30px;
 	display: flex;
-    flex-direction: column;
-    border-radius: 3%;
-    box-shadow: 0 0 30px #fffffff5;
+	flex-direction: column;
+	border-radius: 3%;
+	box-shadow: 0 0 30px #fffffff5;
 }
 
 .login-main .form-block form {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 }
 
 .login-main .form-block form input {
@@ -44,7 +44,6 @@
 .login-main .form-block form :-ms-input-placeholder {
 	color:#ffffff;
 	text-align: center;}
-
 .login-main .form-block form input.submit {
 	color: #ffffff;
 }
@@ -53,18 +52,16 @@
 
 .header {
 	display: flex;
-	width: 100vw;
 	height: 10vh;
 	background: #3f3f3f;
 	justify-content: space-between;
 }
 
 .header > div {
-	width: calc(33.33% - 20px);
+	width: 32%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
 }
 
 .header > div > h2 {
@@ -72,6 +69,7 @@
 	width: 65%;
 	font-size: 20px;
 	color: #dbde2e;
+	text-align: right;
 }
 
 .header > div > p {
@@ -181,3 +179,81 @@
 	font-size: 35px;
 	color: #ffffff;
 }
+
+/*news-page*/
+
+.main {
+	/*width: 100vw;*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.main .side-bar {
+	width: 12%;
+	display: flex;
+	flex-direction: column;
+	background-color: #3f3f3f;
+}
+
+.main .side-bar a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 20vh;
+	font-weight: bold;
+	font-size: 20px;
+	color: #df182b;
+}
+
+.main .content-news {
+	width: 87%;
+
+}
+.main .content-news .item {
+	background-color: #3f3f3f61;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.main .content-news .item .img {
+	background: url(../img/img-news-tyger.jpg) 50% no-repeat;
+	background-size: cover;
+	width:	30%;
+	padding-top: 20%;
+	margin: 0 10px 10px 0;
+	float: left;
+}
+
+.main .content-news .item h1 {
+	display: block;
+	font-size: 20px;
+}
+
+.main .content-news .item .double {
+	margin-top: 20px;
+	display: flex;
+
+}
+
+.main .content-news .item .double p {
+	display: block;
+	width: 25%;
+}
+
+.content-news .descr {
+	margin-top: 20px;
+}
+
+.content-news .descr .double {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.content-news .descr .double a {
+	display: flex;
+	width: 20%;
+
+}
+
