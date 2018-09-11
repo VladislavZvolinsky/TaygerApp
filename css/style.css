@@ -273,7 +273,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.form-news {
+.news-main .form-news {
 	background: #df182bdb;
 	padding: 40px;
 	display: flex;
@@ -348,4 +348,55 @@
     font-size: 30px;
     color: #ffffff;
     text-shadow: 0 0 20px #000000;
+}
+
+/*promo-admin*/
+
+.promo-main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.promo-main .form-promo {
+	background: #df182bdb;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.promo-main .form-promo form {
+	width: 1200px;
+	display: flex;
+	flex-direction: column;
+}
+
+.promo-main .form-promo form input {
+	background: #df182b00;
+	margin-top: 10px;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	padding: 15px;
+}
+
+
+.promo-main .form-promo form ::-webkit-input-placeholder {
+	color:#ffffff;
+	text-align: center;}
+.promo-main .form-promo form ::-moz-placeholder {
+	color:#ffffff;
+	text-align: center;}
+.promo-main .form-promo form :-moz-placeholder {
+	color:#ffffff;
+	text-align: center;}
+.promo-main .form-promo form :-ms-input-placeholder {
+	color:#ffffff;
+	text-align: center;}
+
+.promo-main .form-promo form input.submit {
+	width: 150px;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	margin-top: 20px;
 }
