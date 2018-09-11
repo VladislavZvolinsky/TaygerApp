@@ -268,8 +268,6 @@
 /*news-admin*/
 
 .news-main {
-/*	background: url(../img/login-bg.png) 50% no-repeat #000000;
-	background-size: 40%;*/
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -280,8 +278,6 @@
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
-/*	border-radius: 3%;*/
-/*	box-shadow: 0 0 30px #fffffff5;*/
 }
 
 .news-main .form-news form {
@@ -323,3 +319,33 @@
 	margin-top: 20px;
 }
 
+/*promo page*/
+
+.main .content-promo {
+	width: 87%;
+	background-color: #3f3f3f61;
+	padding: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: -2;
+}
+
+.main .content-promo .promo-img {
+	background: url(../img/shares-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	width:	49%;
+	padding-top: 20%;
+	margin: 0 10px 10px 0;
+	padding-top: 350px;
+	z-index: -1;
+}
+
+.main .content-promo .promo-img .promo-name {
+    display: block;
+    margin-left: 15%;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 20px #000000;
+}
