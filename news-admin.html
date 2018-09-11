@@ -8,18 +8,47 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<main class="news-main">
-		<div class="form-news">
+		<header class="header">
+		<a class="back" href="news-page.html"></a>
+		<div class="total-points">
+			<h2>
+				ОБЩЕЕ КОЛИЧИСТВО БАЛЛОВ
+			</h2>
+			<p class="points">
+				1368
+			</p>
+		</div>
+		<div class="used-points">
+			<h2>
+				ПОТРАЧЕННО БАЛЛОВ СЕГОДНЯ
+			</h2>
+			<p class="points">
+				540
+			</p>
+		</div>
+		<div class="referrals-today">
+			<h2>
+				РЕФЕРАЛОВ СЕГОДНЯ 
+			</h2>
+			<p class="points">
+				12
+			</p>
+		</div>
+	</header>
+		<div class="news-main">
+			<div class="side-bar">
+			<a class="list-news" href="">СПИСОК НОВОСТЕЙ</a>
+			</div>
+
 			<form name="input-news" action="" id="news-admin" class="input-news">
 				<input type="file" src="" alt="альтернативный текст">
 				<input type="text" name="heading-1" placeholder="Заголовок-1">
 				<input type="text" name="heading-2" placeholder="Заголовок-2">
 				<textarea name="comment" placeholder="Текст новости"></textarea>
 				<input class="submit" type="submit" name="submit" value="Создать новость">
-			</form
-
+			</form>
 		</div>
-	</main>
+
 	<script src="js/script.js"></script>
 </body>
 </html>

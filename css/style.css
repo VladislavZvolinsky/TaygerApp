@@ -56,9 +56,26 @@
 	background: #3f3f3f;
 	justify-content: space-between;
 }
+.header .back {
+	background: url(../img/icon-back.png) 50% no-repeat;
+	width: 12%;
+	position: relative;
+}
+
+.header .back:before {
+	position: absolute;
+	content: "";
+    top: 30%;
+    left: 15%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #ffffff;
+    border-bottom: 10px solid transparent;
+}
 
 .header > div {
-	width: 32%;
+	width: 29%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -69,7 +86,7 @@
 	width: 65%;
 	font-size: 20px;
 	color: #dbde2e;
-	text-align: right;
+	text-align: left;
 }
 
 .header > div > p {
@@ -270,23 +287,35 @@
 .news-main {
 	height: 100vh;
 	display: flex;
+	justify-content: space-between;
+}
+
+.news-main .side-bar {
+	width: 12%;
+	display: flex;
+	flex-direction: column;
+	background-color: #3f3f3f;
+}
+
+.news-main .side-bar a {
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	height: 20vh;
+	font-weight: bold;
+	font-size: 20px;
+	color: #df182b;
 }
-.news-main .form-news {
+.news-main .input-news {
+	width: 87%;
 	background: #df182bdb;
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
 }
 
-.news-main .form-news form {
-	width: 1200px;
-	display: flex;
-	flex-direction: column;
-}
-
-.news-main .form-news form input {
+.news-main .input-news input {
 	background: #df182b00;
 	margin-top: 10px;
 	border: none;
@@ -294,25 +323,25 @@
 	padding: 15px;
 }
 
-.news-main .form-news form textarea {
+.news-main .input-news textarea {
 	height: 200px;
 	margin-top: 20px;
 }
 
-.news-main .form-news form ::-webkit-input-placeholder {
+.news-main .input-news ::-webkit-input-placeholder {
 	color:#ffffff;
 	text-align: center;}
-.news-main .form-news form ::-moz-placeholder {
+.news-main .input-news ::-moz-placeholder {
 	color:#ffffff;
 	text-align: center;}
-.news-main .form-news form :-moz-placeholder {
+.news-main .input-news :-moz-placeholder {
 	color:#ffffff;
 	text-align: center;}
-.news-main .form-news form :-ms-input-placeholder {
+.news-main .input-news :-ms-input-placeholder {
 	color:#ffffff;
 	text-align: center;}
 
-.news-main .form-news form input.submit {
+.news-main .input-news input.submit {
 	width: 150px;
 	color: #ffffff;
 	border: 1px solid #ffffff;
@@ -355,24 +384,36 @@
 .promo-main {
 	height: 100vh;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
 }
 
-.promo-main .form-promo {
+.promo-main .side-bar {
+	width: 12%;
+	display: flex;
+	flex-direction: column;
+	background-color: #3f3f3f;
+}
+
+.promo-main .side-bar a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 20vh;
+	font-weight: bold;
+	font-size: 20px;
+	color: #df182b;
+}
+
+.promo-main .input-promo {
+	width: 87%;
 	background: #df182bdb;
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
 }
 
-.promo-main .form-promo form {
-	width: 1200px;
-	display: flex;
-	flex-direction: column;
-}
-
-.promo-main .form-promo form input {
+.promo-main .input-promo input {
 	background: #df182b00;
 	margin-top: 10px;
 	border: none;
@@ -381,20 +422,20 @@
 }
 
 
-.promo-main .form-promo form ::-webkit-input-placeholder {
+.promo-main .input-promo ::-webkit-input-placeholder {
 	color:#ffffff;
 	text-align: center;}
-.promo-main .form-promo form ::-moz-placeholder {
+.promo-main .input-promo ::-moz-placeholder {
 	color:#ffffff;
 	text-align: center;}
-.promo-main .form-promo form :-moz-placeholder {
+.promo-main .input-promo :-moz-placeholder {
 	color:#ffffff;
 	text-align: center;}
-.promo-main .form-promo form :-ms-input-placeholder {
+.promo-main .input-promo :-ms-input-placeholder {
 	color:#ffffff;
 	text-align: center;}
 
-.promo-main .form-promo form input.submit {
+.promo-main .input-promo input.submit {
 	width: 150px;
 	color: #ffffff;
 	border: 1px solid #ffffff;
